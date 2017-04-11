@@ -20,8 +20,9 @@ public class Compose
 	  Thread.sleep(3000);
 	  driver.findElement(By.id("to")).sendKeys("abcd@gmail.com");
 	  driver.findElement(By.id("Subj")).sendKeys("hello");
-	  driver.findElement(By.name("Content")).sendKeys("this is sample mail");
+	  driver.findElement(By.name("Content")).sendKeys("this is a sample mail");
 	  driver.findElement(By.id("send_top")).click();
+	  System.out.println("Sample");
 	  Thread.sleep(3000);
   }
   public void signout()
